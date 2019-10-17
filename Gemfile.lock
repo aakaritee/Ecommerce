@@ -210,7 +210,7 @@ DEPENDENCIES
   bulma-rails (~> 0.7.5)
   byebug
   capybara (>= 2.15)
-  carrierwave
+  carrierwave (~> 2.0, >= 2.0.2)
   coffee-rails (~> 4.2)
   devise
   gravatar_image_tag
