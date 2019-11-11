@@ -12,6 +12,22 @@
     <%= f.input :price %>
   </div>
 
+  <div class="columns">
+    <div class="field column is-4">
+      <div class="control">
+        <label class="label">Condition</label>
+        <div class="control has-icon-left">
+          <span class="select">
+            <%= f.input_field :condition, collection: Book::CONDITION, prompt: "Select condition" %>
+          </span>
+          <span class="icon is-small is-left">
+            <i class="fa fa-tag"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="form-actions">
     <%= f.button :submit %>
   </div>
