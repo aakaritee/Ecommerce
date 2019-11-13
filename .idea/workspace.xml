@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20401363-4fcd-43ec-8b94-131be9407f6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/books.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/concerns/current_cart.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Eccomerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Eccomerce.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/books.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/books.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/books_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/books_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/book.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/book.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/books/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/books/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/cart.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/cart.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/line_item.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/line_item.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/books/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/books/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/books/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/books/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20191113081405_create_line_items.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20191113081405_create_line_items.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -212,7 +202,7 @@
       <workItem from="1571770055170" duration="4111000" />
       <workItem from="1573239530157" duration="19501000" />
       <workItem from="1573489682632" duration="21920000" />
-      <workItem from="1573632325139" duration="6681000" />
+      <workItem from="1573632325139" duration="9277000" />
     </task>
     <servers />
   </component>

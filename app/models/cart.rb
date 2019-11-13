@@ -3,6 +3,7 @@ class Cart < ApplicationRecord
 
   def add_book(book)
     current_item = line_items.find_by(book_id: book.id)
+
     if current_item
       current_item.increment(:quantity)
     else

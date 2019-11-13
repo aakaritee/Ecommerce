@@ -31,7 +31,7 @@
       <h1 style="font-weight:bold; float:left; font-size: x-large">
         <%= link_to book.title, book %>
         <h1 style="font-weight:bold; float:right; font-size: xx-large">
-          $<%=link_to book.price, line_item_path(book_id: @book)%>
+          $<%=book.price %>
         </h1>
       </h1><br>
 
