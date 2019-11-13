@@ -3,11 +3,12 @@ class Book < ApplicationRecord
   mount_uploader :image, ImageUploader
   serialize :image, JSON #JSON because we're using sqlite
   belongs_to :user, optional: true
+  has_many :line_items
 
-  validates :title, :author, :condition, :publication, :date_published, :price, presence:true
+  validates :title, :author, :condition, :publisher, :date_published, :price, presence:true
   validates :description, length: {maximum: 1000, too_long: "%{count} characters is the maximum allowed."}
   validates :title, length: {maximum: 140, too_long: "%{count} characters is the maximum allowed."}
-  validates :price, numericality: {only_integer: true}, length: {maximum: 7}
+  validates :price, numericality: {only_integer: false}, length: {maximum: 7}
 
   CONDITION = %w{ New Used-Excellent Used-Good Used-Acceptable }
   
