@@ -36,6 +36,7 @@ gem 'gravatar_image_tag'
 gem 'carrierwave', '~> 2.0', '>= 2.0.2'
 
 gem 'mini_magick'
+gem 'image_magick'
 
 gem "bulma-rails", "~> 0.7.5"
 
@@ -61,5 +62,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jquery-rails'
 
 
-# Shopping Cart
-#gem 'shopping-cart'
+# For admin roles and stuff
+gem 'cancancan', '~> 2.1', '>= 2.1.3'
+gem 'rolify', '~> 5.2'
