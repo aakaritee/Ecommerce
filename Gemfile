@@ -36,7 +36,6 @@ gem 'gravatar_image_tag'
 gem 'carrierwave', '~> 2.0', '>= 2.0.2'
 
 gem 'mini_magick'
-gem 'image_magick'
 
 gem "bulma-rails", "~> 0.7.5"
 

@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20401363-4fcd-43ec-8b94-131be9407f6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/line_items/_line_item.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Eccomerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Eccomerce.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/carts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/carts_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/cart.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/cart.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/line_item.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/line_item.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/carts/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/carts/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -207,7 +197,8 @@
       <workItem from="1573239530157" duration="19501000" />
       <workItem from="1573489682632" duration="21920000" />
       <workItem from="1573632325139" duration="12772000" />
-      <workItem from="1573757821397" duration="11572000" />
+      <workItem from="1573757821397" duration="11853000" />
+      <workItem from="1573856432914" duration="133000" />
     </task>
     <servers />
   </component>
@@ -228,6 +219,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Ecommerce@Development__Eccomerce.rcov" NAME="Development: Eccomerce Coverage Results" MODIFIED="1573855981333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Eccomerce" />
+    <SUITE FILE_PATH="coverage/Ecommerce@Development__Eccomerce.rcov" NAME="Development: Eccomerce Coverage Results" MODIFIED="1573856737384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Eccomerce" />
   </component>
 </project>
