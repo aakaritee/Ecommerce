@@ -1,38 +1,70 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @book.title %>
-</p>
-
-<p>
-  <strong>Author:</strong>
-  <%= @book.author %>
-</p>
-
-<p>
-  <strong>Publisher:</strong>
-  <%= @book.publisher %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @book.description %>
-</p>
-
-<p>
-  <strong>Date published:</strong>
-  <%= @book.date_published %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @book.price %>
-</p>
-
-<div>
-  <%= button_to 'Add To Cart', line_items_path(book_id: @book)%>
+<br>
+<div style="float:left">
+  <%if @book.image_url %>
+    <%= image_tag(@book.image_url(:default))%>
+  <%else %>
+    <%=image_tag "Cover sample.jpg" %>
+  <%end %>
 </div>
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+<div style="padding-left: 250px">
+  <div>
+    <div style="font-weight:bold; font-size: x-large; float:left">
+      <%= @book.title %>
+    </div>
+    <%if book_seller(@book) || admin %>
+      <div style="float:right">
+        <%= link_to edit_book_path(@book), class:"button" do %>
+          <spanner>Edit <i class="fa fa-pencil"></i></spanner>
+        <%end %>
+        <%= link_to @book, method: :delete, data: { confirm: 'Are you sure?' }, class:"button" do%>
+          <spanner><i class="fa fa-trash"></i></spanner>
+        <%end %>
+      </div>
+    <%end %>
+    <br>
+    <br>
+
+    <div style="font-size: large">
+      by <%= @book.author %>
+    </div>
+  </div><hr>
+
+  <div style="font-style: italic">
+    Published in <%= @book.date_published %>,
+  </div>
+  <br>
+
+  <div>
+    <%= @book.description %>
+  </div>
+
+</div>
+<br>
+<br>
+
+<div>
+  <%if user_signed_in? %>
+    <div style="padding-left: 20px; float:left">
+      <%= button_to 'Add to Cart', line_items_path(book_id: @book), class:"button is-danger"%>
+    </div>
+  <%else %>
+    <div style="padding-left: 20px; float:left">
+      <%= link_to "(Log In to Add to Cart)", new_user_session_path, class:"navbar-item is-white" %>
+    </div>
+  <%end %>
+  <h1 style="font-weight:bold; float:right; font-size: xx-large">
+    $<%= @book.price %>
+  </h1>
+</div>
+
+<br>
+<br>
+<br>
+<hr>
+<div>
+  <spanner><i class="fa fa-id-card"></i></spanner> User ID: <%=@book.user_id %>
+</div>
+
+
+

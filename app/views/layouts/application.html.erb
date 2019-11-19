@@ -24,7 +24,7 @@
 <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <%= link_to root_path, class:"navbar-item" do %>
-      <h1 class="title is-5" style="color:white">  > Nexus Shelf</h1>
+      <h1 class="title is-5" style="color:white">  > Shopping Cart</h1>
     <% end  %>
     <div class="navbar-burger burger" data-target="navbar">
       <span></span>
@@ -39,11 +39,11 @@
         <div class="field is-grouped">
 
           <% if cart_has_items %>
-            <%= link_to cart_path(@cart), class:"navbar-item button is-warning" do %>
-              <span class="icon is-small">
+            <%= link_to cart_path(@cart), class:"navbar-item button" do %>
+              <span class="icon is-small", style="color:red">
                 <i class="fa fa-shopping-cart"></i>
               </span>
-              <span>Cart
+              <span style="font-weight: bold; color:red">
                 <%= cart_count_over_one %>
               </span>
             <%end %>
@@ -61,8 +61,8 @@
             </div>
           <% else %>
 
-            <%= link_to "Sign In", new_user_session_path, class:"navbar-item button is-warning" %>
-            <%= link_to "Sign up", new_user_registration_path, class:"navbar-item button is-warning"%>
+            <%= link_to "Log In", new_user_session_path, class:"navbar-item is-white" %>
+            <%= link_to "SIGN UP", new_user_registration_path, class:"navbar-item button"%>
 
           <% end %>
 

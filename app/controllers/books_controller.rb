@@ -3,6 +3,11 @@ class BooksController < ApplicationController
   before_action :authenticate_user!, except: [ :index, :show]
   # GET /books
   # GET /books.json
+
+  def admin
+    @books = Book.all.order("created_at desc")
+  end
+
   def index
     @books = Book.all.order("created_at desc")
   end

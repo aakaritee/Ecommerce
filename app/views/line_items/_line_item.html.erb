@@ -1,11 +1,11 @@
 <div class="columns align-items-center">
-  <div class="column is-1">
-    <%= line_item.quantity %>
-  </div>
   <div class="column is-2">
-    <figure class="is-128x128 image">
-      <%= image_tag "Cover sample.jpg" %>
-    </figure>
+    <%if line_item.book.image.url%>
+      <%= image_tag(line_item.book.image.url) %>
+    <%else %>
+      <%=image_tag "Cover sample.jpg" %>
+    <%end %>
+
   </div>
   <div class="column is-9">
     <strong><%= line_item.book.title %></strong>
