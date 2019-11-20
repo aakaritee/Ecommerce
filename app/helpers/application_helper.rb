@@ -11,6 +11,6 @@ module ApplicationHelper
   end
 
   def admin
-    current_user.id = 9999 && user_signed_in?
+    user_signed_in? && current_user.id == 9999
   end
 end

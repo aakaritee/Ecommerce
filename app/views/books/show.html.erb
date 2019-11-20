@@ -7,7 +7,7 @@
   <%end %>
 </div>
 
-<div style="padding-left: 250px">
+<div style="padding-left: 280px">
   <div>
     <div style="font-weight:bold; font-size: x-large; float:left">
       <%= @book.title %>
@@ -39,27 +39,32 @@
     <%= @book.description %>
   </div>
 
-</div>
-<br>
-<br>
 
-<div>
-  <%if user_signed_in? %>
-    <div style="padding-left: 20px; float:left">
-      <%= button_to 'Add to Cart', line_items_path(book_id: @book), class:"button is-danger"%>
-    </div>
-  <%else %>
-    <div style="padding-left: 20px; float:left">
-      <%= link_to "(Log In to Add to Cart)", new_user_session_path, class:"navbar-item is-white" %>
-    </div>
-  <%end %>
-  <h1 style="font-weight:bold; float:right; font-size: xx-large">
-    $<%= @book.price %>
-  </h1>
+  <br>
+  <br>
+
+  <div>
+    <%if user_signed_in? %>
+      <div style="float:left">
+        <%= button_to 'Add to Cart', line_items_path(book_id: @book), class:"button is-danger"%>
+      </div>
+    <%else %>
+      <div style="padding-left: 20px; float:left">
+        <%= link_to "(Log In to Add to Cart)", new_user_session_path, class:"navbar-item is-white" %>
+      </div>
+    <%end %>
+    <h1 style="font-weight:bold; float:right; font-size: xx-large">
+      $<%= @book.price %>
+    </h1>
+    <br>
+    <br>
+    <h2 style="float:right">
+      Condition: <%= @book.condition %>
+    </h2>
+  </div>
 </div>
 
-<br>
-<br>
+
 <br>
 <hr>
 <div>
