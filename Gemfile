@@ -33,7 +33,7 @@ gem 'sqlite3', '~> 1.4', '>= 1.4.1'
 gem 'simple_form'
 gem 'devise'
 gem 'gravatar_image_tag'
-gem 'carrierwave', '~> 2.0', '>= 2.0.2'
+gem 'carrierwave', '~> 2.1'
 gem 'mini_magick'
 
 gem "bulma-rails", "~> 0.7.5"
